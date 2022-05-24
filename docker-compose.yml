@@ -31,6 +31,9 @@ services:
       - '80:80'
       - '81:81'
       - '443:443'
+      - '16261:16261'
+      - '8766:8766'
+      - '8767:8767'
     restart: unless-stopped
     volumes:
       - husarnet_v:/var/lib/husarnet
