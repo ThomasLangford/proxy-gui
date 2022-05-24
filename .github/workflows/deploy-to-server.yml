@@ -31,5 +31,5 @@ jobs:
         --extra-vars "joincode=${{secrets.HUSARNET_JOINCODE}}" 
         --extra-vars "ansible_user=root" 
         --extra-vars "ANSIBLE_HOST_KEY_CHECKING=False" 
-        --extra-vars "ansible_ssh_common_args='-o userknownhostsfile=/dev/null'"
+        --extra-vars "ansible_ssh_common_args: '-o StrictHostKeyChecking=no'"
         .ansible/deploy.yml
