@@ -30,4 +30,5 @@ jobs:
         --private-key "./github-actions-ssh-key" 
         --extra-vars "joincode=${{secrets.HUSARNET_JOINCODE}}" 
         --extra-vars "ansible_user=root" 
+        --extra-vars "ANSIBLE_HOST_KEY_CHECKING=False" 
         .ansible/deploy.yml
